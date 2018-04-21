@@ -37,5 +37,10 @@ class ViewController: UIViewController {
     self.performSegue(withIdentifier: "toUserHome", sender: nil)
   }
   
+  @IBAction func moveProducerHome(_ sender: Any) {
+    self.performSegue(withIdentifier: "toProducerHome", sender: nil)
+  }
+  
+  
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8DAEC045208BC8D300AFB013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DAEC044208BC8D300AFB013 /* GoogleService-Info.plist */; };
+		8DAEC047208BD59500AFB013 /* producerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEC046208BD59500AFB013 /* producerHomeViewController.swift */; };
+		8DAEC049208BDF7900AFB013 /* ConsumerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEC048208BDF7900AFB013 /* ConsumerSelectionViewController.swift */; };
 		B13EBDF7DDF9754C1C6D5FA9 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6B6CC0E5C6B9FE6436B880 /* Pods_Connect.framework */; };
 		EA7D44D5208B7C2E0065C335 /* userHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D44D4208B7C2E0065C335 /* userHomeController.swift */; };
 		EA7D44D7208B8FA50065C335 /* productTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D44D6208B8FA50065C335 /* productTableViewCell.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		82437678C50B998B1B9473DA /* Pods-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.release.xcconfig"; path = "Pods/Target Support Files/Pods-Connect/Pods-Connect.release.xcconfig"; sourceTree = "<group>"; };
 		8DAEC044208BC8D300AFB013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DAEC046208BD59500AFB013 /* producerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = producerHomeViewController.swift; sourceTree = "<group>"; };
+		8DAEC048208BDF7900AFB013 /* ConsumerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerSelectionViewController.swift; sourceTree = "<group>"; };
 		A23137863E46F2D027BB11D6 /* Pods-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Connect/Pods-Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		DB6B6CC0E5C6B9FE6436B880 /* Pods_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7D44D4208B7C2E0065C335 /* userHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userHomeController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				EA7D44D4208B7C2E0065C335 /* userHomeController.swift */,
 				EA7D44D6208B8FA50065C335 /* productTableViewCell.swift */,
 				EA7D44D9208B98E70065C335 /* consumerPostsViewController.swift */,
+				8DAEC046208BD59500AFB013 /* producerHomeViewController.swift */,
+				8DAEC048208BDF7900AFB013 /* ConsumerSelectionViewController.swift */,
 			);
 			path = Connect;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DAEC047208BD59500AFB013 /* producerHomeViewController.swift in Sources */,
 				EA7D44D5208B7C2E0065C335 /* userHomeController.swift in Sources */,
+				8DAEC049208BDF7900AFB013 /* ConsumerSelectionViewController.swift in Sources */,
 				EA7D44D7208B8FA50065C335 /* productTableViewCell.swift in Sources */,
 				EAD51F34208B303C00D652D8 /* ViewController.swift in Sources */,
 				EAD51F32208B303C00D652D8 /* AppDelegate.swift in Sources */,
