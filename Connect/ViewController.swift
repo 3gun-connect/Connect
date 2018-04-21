@@ -11,8 +11,21 @@ import Firebase
 
 class ViewController: UIViewController {
   
+  let rootRef = Database.database().reference()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    // 子ノード condition への参照
+    let conditionRef = rootRef.child("condition")
+    // クラウド上で、ノード condition に変更があった場合のコールバック処理
+    conditionRef.observe(.value) { (snap: DataSnapshot) in
+      print("ノードの値が変わりました！: \((snap.value as AnyObject).description)")
+    }
   }
   
   override func didReceiveMemoryWarning() {

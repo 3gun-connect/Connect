@@ -8,7 +8,7 @@
 
 import UIKit
 
-class userHomeController: UIViewController , UITableViewDataSource,UITableViewDelegate{
+class userHomeController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
   @IBOutlet weak var productTable: UITableView!
   
