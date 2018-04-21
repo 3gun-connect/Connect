@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConsumerSelectionViewController: UIViewController ,UITableViewDataSource{
+class ConsumerSelectionViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
 
   @IBOutlet weak var yasaiNameLabel: UILabel!
   @IBOutlet weak var consumerTableView: UITableView!
@@ -21,6 +21,7 @@ class ConsumerSelectionViewController: UIViewController ,UITableViewDataSource{
   override func viewDidLoad() {
         super.viewDidLoad()
         consumerTableView.dataSource = self
+        consumerTableView.delegate = self
         yasaiNameLabel.text = nameLabel!
     
         self.consumerList.removeAll()
@@ -33,15 +34,22 @@ class ConsumerSelectionViewController: UIViewController ,UITableViewDataSource{
   
   
   
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return consumerList.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return consumerList.count
+    }
+  
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      let cell = consumerTableView.dequeueReusableCell(withIdentifier: "consumerCell", for: indexPath)
+      cell.textLabel?.text = consumerList[indexPath.row].name
+      return cell
+    }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    consumerTableView.deselectRow(at: indexPath, animated: true)
+    self.performSegue(withIdentifier: "toEvaluationScreen", sender: nil)
   }
   
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = consumerTableView.dequeueReusableCell(withIdentifier: "consumerCell", for: indexPath)
-    cell.textLabel?.text = consumerList[indexPath.row].name
-    return cell
-  }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
