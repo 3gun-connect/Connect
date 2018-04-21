@@ -226,6 +226,9 @@
                                 <rect key="frame" x="302" y="588" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="commentSend:" destination="SAg-2d-cpD" eventType="touchUpInside" id="IEM-f7-Mky"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,6 +246,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qWb-ih-Uoz"/>
                     </view>
+                    <connections>
+                        <outlet property="commentText" destination="wbv-gs-I8n" id="e4U-OO-szb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2H-SM-YNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

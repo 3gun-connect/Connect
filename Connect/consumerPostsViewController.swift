@@ -8,15 +8,27 @@
 
 import UIKit
 
-class consumerPostsViewController: UIViewController {
+class consumerPostsViewController: UIViewController,UITextFieldDelegate {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var commentText: UITextField!
+  override func viewDidLoad() {
         super.viewDidLoad()
+        commentText.delegate = self
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+  @IBAction func commentSend(_ sender: Any) {
+    print(commentText.text!)
+    self.navigationController?.popViewController(animated: true)
+  }
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    // キーボードを閉じるよ！！
+    
+    return true
+  }
+  override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
