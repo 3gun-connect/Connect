@@ -20,6 +20,7 @@ class producerHomeViewController: UIViewController,UITableViewDataSource,UITable
         self.yasaiList.removeAll()
         let yasai = ("Testnegi","ネギ")
         self.yasaiList.append(yasai)
+        self.yasaiTableView.reloadData()
 
         // Do any additional setup after loading the view.
     }
@@ -40,6 +41,14 @@ class producerHomeViewController: UIViewController,UITableViewDataSource,UITable
     yasaiTableView.deselectRow(at: indexPath, animated: true)
     self.performSegue(withIdentifier: "toConsumerSelection", sender: yasaiList[indexPath.row].name)
     
+  }
+  
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "toConsumerSelection" {
+      let ConsumerSelectionViewController = segue.destination as! ConsumerSelectionViewController
+      ConsumerSelectionViewController.nameLabel = sender as! String
+    }
   }
 
     override func didReceiveMemoryWarning() {

@@ -29,6 +29,7 @@ class userHomeController: UIViewController, UITableViewDataSource, UITableViewDe
         //仮の表示用データ
         let product = ("Testnegi","田中　健","2018/09/11","東京都調布市TOP",true)
         self.productList.append(product)
+        self.productTable.reloadData()
     }
   
   
