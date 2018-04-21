@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DAEC045208BC8D300AFB013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DAEC044208BC8D300AFB013 /* GoogleService-Info.plist */; };
 		B13EBDF7DDF9754C1C6D5FA9 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6B6CC0E5C6B9FE6436B880 /* Pods_Connect.framework */; };
 		EA7D44D5208B7C2E0065C335 /* userHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D44D4208B7C2E0065C335 /* userHomeController.swift */; };
 		EA7D44D7208B8FA50065C335 /* productTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D44D6208B8FA50065C335 /* productTableViewCell.swift */; };
 		EA7D44DA208B98E70065C335 /* consumerPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D44D9208B98E70065C335 /* consumerPostsViewController.swift */; };
-		EAA80738208BBDBD00808C42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA80737208BBDBD00808C42 /* GoogleService-Info.plist */; };
 		EAD51F32208B303C00D652D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD51F31208B303C00D652D8 /* AppDelegate.swift */; };
 		EAD51F34208B303C00D652D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD51F33208B303C00D652D8 /* ViewController.swift */; };
 		EAD51F37208B303C00D652D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD51F35208B303C00D652D8 /* Main.storyboard */; };
@@ -21,12 +21,12 @@
 
 /* Begin PBXFileReference section */
 		82437678C50B998B1B9473DA /* Pods-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.release.xcconfig"; path = "Pods/Target Support Files/Pods-Connect/Pods-Connect.release.xcconfig"; sourceTree = "<group>"; };
+		8DAEC044208BC8D300AFB013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A23137863E46F2D027BB11D6 /* Pods-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Connect/Pods-Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		DB6B6CC0E5C6B9FE6436B880 /* Pods_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7D44D4208B7C2E0065C335 /* userHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userHomeController.swift; sourceTree = "<group>"; };
 		EA7D44D6208B8FA50065C335 /* productTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewCell.swift; sourceTree = "<group>"; };
 		EA7D44D9208B98E70065C335 /* consumerPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consumerPostsViewController.swift; sourceTree = "<group>"; };
-		EAA80737208BBDBD00808C42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAD51F2E208B303C00D652D8 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD51F31208B303C00D652D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD51F33208B303C00D652D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				EAD51F38208B303D00D652D8 /* Assets.xcassets */,
 				EAD51F3A208B303D00D652D8 /* LaunchScreen.storyboard */,
 				EAD51F3D208B303D00D652D8 /* Info.plist */,
-				EAA80737208BBDBD00808C42 /* GoogleService-Info.plist */,
+				8DAEC044208BC8D300AFB013 /* GoogleService-Info.plist */,
 				EA7D44D4208B7C2E0065C335 /* userHomeController.swift */,
 				EA7D44D6208B8FA50065C335 /* productTableViewCell.swift */,
 				EA7D44D9208B98E70065C335 /* consumerPostsViewController.swift */,
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD51F3C208B303D00D652D8 /* LaunchScreen.storyboard in Resources */,
-				EAA80738208BBDBD00808C42 /* GoogleService-Info.plist in Resources */,
+				8DAEC045208BC8D300AFB013 /* GoogleService-Info.plist in Resources */,
 				EAD51F39208B303D00D652D8 /* Assets.xcassets in Resources */,
 				EAD51F37208B303C00D652D8 /* Main.storyboard in Resources */,
 			);
@@ -369,14 +369,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C4FVSQ58KR;
+				DEVELOPMENT_TEAM = URT7G4TP66;
 				INFOPLIST_FILE = Connect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.spajam.3-gun.Connect12";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.spajam.3-gun.Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,14 +389,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C4FVSQ58KR;
+				DEVELOPMENT_TEAM = URT7G4TP66;
 				INFOPLIST_FILE = Connect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.spajam.3-gun.Connect12";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.spajam.3-gun.Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
