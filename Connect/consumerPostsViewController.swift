@@ -10,23 +10,27 @@ import UIKit
 
 class consumerPostsViewController: UIViewController,UITextFieldDelegate {
 
-  @IBOutlet weak var scrollView: UIScrollView!
   @IBOutlet weak var commentText: UITextField!
   override func viewDidLoad() {
         super.viewDidLoad()
         commentText.delegate = self
+        self.setNavigationBar()
     
-    /*let scrollView = UIScrollView()
-    scrollView.frame = CGRect(x: 0.0, y: -150.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    
+
+    
+    let scrollView = UIScrollView()
+    scrollView.frame = CGRect(x: 0.0, y: -120, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width * 2, height: UIScreen.main.bounds.height)
-    scrollView.isPagingEnabled = true*/
+    scrollView.isPagingEnabled = true
     
     // 1枚目の画像
     let firstImageView = UIImageView(image: UIImage(named: "nasu"))
     firstImageView.frame = CGRect(x: UIScreen.main.bounds.width * 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     firstImageView.contentMode = UIViewContentMode.scaleAspectFit
     scrollView.addSubview(firstImageView)
-    
+    print(UIScreen.main.bounds.width)
+    print(UIScreen.main.bounds.height)
     // 2枚目の画像
     let secondImageView = UIImageView(image: UIImage(named: "Testnegi"))
     secondImageView.frame = CGRect(x: UIScreen.main.bounds.width * 1.0, y: 0.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
@@ -34,7 +38,9 @@ class consumerPostsViewController: UIViewController,UITextFieldDelegate {
     scrollView.addSubview(secondImageView)
     
     // スクロールビューを追加
-    //self.view.addSubview(scrollView)
+    self.view.addSubview(scrollView)
+    self.view.sendSubview(toBack: scrollView)
+    
 
         // Do any additional setup after loading the view.
     }
@@ -53,6 +59,11 @@ class consumerPostsViewController: UIViewController,UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
+  func setNavigationBar() {
+    self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    self.navigationController!.navigationBar.shadowImage = UIImage()
+  }
     
 
     /*

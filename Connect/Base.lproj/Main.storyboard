@@ -24,15 +24,31 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ログインID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4yG-Gr-W5L" customClass="MadokaTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="63" y="350" width="250" height="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-ds-Tjj" customClass="MadokaTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="63" y="408" width="250" height="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4p-lf-b86">
                                 <rect key="frame" x="154" y="478" width="68" height="30"/>
@@ -464,30 +480,21 @@
                                     <action selector="commentSend:" destination="SAg-2d-cpD" eventType="touchUpInside" id="IEM-f7-Mky"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbv-gs-I8n">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbv-gs-I8n">
                                 <rect key="frame" x="16" y="527" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28l-cZ-ynf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="199"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="Jz1-fh-Yv1"/>
-                                    <constraint firstAttribute="height" constant="199" id="qc9-jx-OuD"/>
-                                </constraints>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qWb-ih-Uoz" firstAttribute="trailing" secondItem="8gd-fd-onz" secondAttribute="trailing" constant="16" id="5Yn-gq-xhu"/>
-                            <constraint firstItem="28l-cZ-ynf" firstAttribute="leading" secondItem="qWb-ih-Uoz" secondAttribute="leading" id="D2S-DD-QwP"/>
+                            <constraint firstItem="wbv-gs-I8n" firstAttribute="top" secondItem="DNV-Fy-5fE" secondAttribute="bottom" constant="393" id="Dv9-OG-xSG"/>
                             <constraint firstItem="5Im-5j-cXh" firstAttribute="leading" secondItem="qWb-ih-Uoz" secondAttribute="leading" constant="16" id="VD5-UP-b7J"/>
-                            <constraint firstItem="28l-cZ-ynf" firstAttribute="trailing" secondItem="qWb-ih-Uoz" secondAttribute="trailing" id="WfF-yn-Ihh"/>
                             <constraint firstItem="qWb-ih-Uoz" firstAttribute="trailing" secondItem="wbv-gs-I8n" secondAttribute="trailing" constant="16" id="Y2E-De-Jp6"/>
                             <constraint firstItem="DNV-Fy-5fE" firstAttribute="top" secondItem="5Im-5j-cXh" secondAttribute="bottom" constant="8" id="YMp-SA-Vwm"/>
                             <constraint firstItem="8gd-fd-onz" firstAttribute="top" secondItem="qWb-ih-Uoz" secondAttribute="top" constant="12" id="cZd-bF-YAe"/>
-                            <constraint firstItem="28l-cZ-ynf" firstAttribute="top" secondItem="qWb-ih-Uoz" secondAttribute="top" id="jgI-bf-6g2"/>
                             <constraint firstItem="5Im-5j-cXh" firstAttribute="top" secondItem="qWb-ih-Uoz" secondAttribute="top" constant="12" id="mrZ-v0-XVU"/>
                             <constraint firstItem="wbv-gs-I8n" firstAttribute="leading" secondItem="qWb-ih-Uoz" secondAttribute="leading" constant="16" id="nML-l1-9o8"/>
                             <constraint firstItem="DNV-Fy-5fE" firstAttribute="leading" secondItem="qWb-ih-Uoz" secondAttribute="leading" constant="16" id="uUq-GN-QSQ"/>
@@ -496,12 +503,11 @@
                     </view>
                     <connections>
                         <outlet property="commentText" destination="wbv-gs-I8n" id="e4U-OO-szb"/>
-                        <outlet property="scrollView" destination="28l-cZ-ynf" id="8jj-84-I7B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2H-SM-YNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3053.5999999999999" y="36.431784107946029"/>
+            <point key="canvasLocation" x="3467" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UTF-c6-3gA">
@@ -519,7 +525,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkE-Tw-h1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="-699"/>
+            <point key="canvasLocation" x="2185" y="-726"/>
         </scene>
     </scenes>
     <resources>
