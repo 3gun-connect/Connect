@@ -9,12 +9,17 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UITextFieldDelegate{
   
-//  let rootRef = Database.database().reference()
+  @IBOutlet weak var loginId: UITextField!
+  @IBOutlet weak var pass: UITextField!
+  
+  //  let rootRef = Database.database().reference()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    loginId.delegate = self
+    pass.delegate = self
   }
   
 //  override func viewDidAppear(_ animated: Bool) {
@@ -33,13 +38,26 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  @IBAction func moveUserHome(_ sender: Any) {
-    self.performSegue(withIdentifier: "toUserHome", sender: nil)
+  
+  @IBAction func moveHome(_ sender: Any) {
+    let searchoginId = self.loginId.text!
+    if searchoginId == "G015C"{
+      self.performSegue(withIdentifier: "toUserHome", sender: nil)
+    }else if searchoginId == "G015F"{
+      self.performSegue(withIdentifier: "toProducerHome", sender: nil)
+    }
+    
   }
   
-  @IBAction func moveProducerHome(_ sender: Any) {
-    self.performSegue(withIdentifier: "toProducerHome", sender: nil)
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+  loginId.resignFirstResponder()
+  pass.resignFirstResponder()
+  // キーボードを閉じるよ！！
+  
+  return true
   }
+  
+  
   
   
 }

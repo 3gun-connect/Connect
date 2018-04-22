@@ -27,8 +27,14 @@ class userHomeController: UIViewController, UITableViewDataSource, UITableViewDe
         //配列の初期化
         self.productList.removeAll()
         //仮の表示用データ
-        let product = ("Testnegi","田中　健","2018/09/11","東京都調布市TOP",true)
+        let product = ("Testnegi","田中　健","2018年09月11日","東京都調布市TOP",true)
+        let product2 = ("before","与田　祐希","2018年09月14日","東京都小金井市サミット",false)
+        let product3 = ("kyabetu","山本　大和","2018年09月20日","埼玉県大宮市業務スーパー",false)
+        let product4 = ("nasu","興梠　秀","2018年09月25日","東京都世田谷区業務スーパー",false)
         self.productList.append(product)
+        self.productList.append(product2)
+        self.productList.append(product3)
+        self.productList.append(product4)
         self.productTable.reloadData()
     }
   
@@ -41,7 +47,7 @@ class userHomeController: UIViewController, UITableViewDataSource, UITableViewDe
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = productTable.dequeueReusableCell(withIdentifier: "productCell",for: indexPath) as! productTableViewCell
     cell.productName?.text = productList[indexPath.row].name
-    cell.productImage?.image = UIImage(named: "Testnegi")
+    cell.productImage?.image = UIImage(named: "\(productList[indexPath.row].image)")
     cell.productDay?.text = productList[indexPath.row].day
     cell.productArea?.text = productList[indexPath.row].area
     return cell
